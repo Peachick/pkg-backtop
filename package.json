@@ -1,0 +1,28 @@
+{
+  "name": "pkg-backtop",
+  "version": "0.0.1",
+  "description": "Backtop Component",
+  "main": "dist/backtop.js",
+  "scripts": {
+    "live": "live-server ./ --open=./demo/index.html --watch",
+    "dev": "concurrently \"npm run build -w\" \"npm run live\"",
+    "build": "rollup -c"
+  },
+  "repository": "https://github.com/Peachick/pkg-backtop.git",
+  "author": "Peachick <wsm_1105@163.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/Peachick/pkg-backtop#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-flow": "^7.12.1",
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "concurrently": "^5.3.0",
+    "corejs": "^1.0.0",
+    "live-server": "^1.2.1",
+    "pkg-backtop": "^0.0.1"
+  }
+}

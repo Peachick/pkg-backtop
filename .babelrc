@@ -1,0 +1,20 @@
+{
+  "presets": [
+    "@babel/preset-flow",
+    [
+      "@babel/preset-env",
+      {
+        "modules": false,
+        "targets": {
+          "edge": "8",
+          "chrome": "30",
+          "firefox": "38",
+          "safari": "9",
+          "ie": "8"
+        },
+        "corejs": "3",
+        "useBuiltIns": "usage"
+      }
+    ]
+  ]
+}
